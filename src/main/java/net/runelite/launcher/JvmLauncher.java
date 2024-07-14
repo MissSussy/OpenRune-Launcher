@@ -35,6 +35,8 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
+
+import com.google.common.collect.Lists;
 import lombok.extern.slf4j.Slf4j;
 import net.runelite.launcher.beans.Bootstrap;
 import org.slf4j.Logger;
@@ -117,6 +119,7 @@ class JvmLauncher
 		{
 			arguments.add("-D" + entry.getKey() + "=" + entry.getValue());
 		}
+
 		arguments.addAll(jvmArgs);
 
 		arguments.add(Launcher.clientTypes.get(type).getMain());
