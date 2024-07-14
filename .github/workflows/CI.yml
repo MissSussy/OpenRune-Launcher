@@ -110,7 +110,7 @@ jobs:
             Elvarg-aarch64.AppImage
           if-no-files-found: error
   macos:
-    runs-on: macos-11
+    runs-on: macos-12
     steps:
       - uses: actions/setup-python@v4
         with:
